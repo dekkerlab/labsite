@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
 
   // Use the imported function for global data
   eleventyConfig.addGlobalData("site", {
-    currentYear: utils.currentYear(),
+    currentYear: utils.currentYear,
     getLastName: utils.getLastName,
   });
 

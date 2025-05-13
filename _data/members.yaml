@@ -1,69 +1,55 @@
 - name: Job Dekker
   image: /images/members/job.jpg
-  email: john.doe@example.com
   position: Principal Investigator
 
 - name: Nicki Fox
   image: /images/members/nicki.jpg
-  email: jane.smith@example.org
   position: Senior Scientist
 
 - name: Johan Gibcus
   image: /images/members/johan.png
-  email: peter.jones@example.net
   position: Assistant Professor
 
 - name: Liyan Yang
   image: /images/members/liyan.jpg
-  email: peter.jones@example.net
   position: Research Associate II
 
 - name: Sergey Venev
   image: /images/members/sergey.jpg
-  email: peter.jones@example.net
   position: Bioinformatics Specialist III
 
 - name: Ye Zhan
   image: /images/members/ye.png
-  email: peter.jones@example.net
   position: Senior Research Scientist
 
 - name: Allana Schooley
   image: /images/members/allana.jpg
-  email: peter.jones@example.net
   position: Postdoctoral Fellow
 
 - name: Bastiaan Dekker
   image: /images/members/bastiaan.jpg
-  email: peter.jones@example.net
   position: PhD Student
 
 - name: Denis Lafontaine
   image: /images/members/denis.jpg
-  email: peter.jones@example.net
   position: PhD Student
 
 - name: Xiangru Huo
   image: /images/members/xiangru.jpg
-  email: peter.jones@example.net
   position: Postdoctoral Fellow
 
 - name: Jiangyuan Liu
   image: /images/members/jiangyuan.jpg
-  email: peter.jones@example.net
   position: PhD Student
 
 - name: Nicola Minchell
   image: /images/members/nicola.jpg
-  email: peter.jones@example.net
   position: Postdoctoral Fellow
 
 - name: Emily Navarrete
   image: /images/members/emily.jpg
-  email: peter.jones@example.net
   position: PhD Student
 
 - name: Yu Fu
   image: /images/members/yu.jpg
-  email: peter.jones@example.net
   position: PhD Student

@@ -8,18 +8,18 @@ These instructions will guide you on how to set up and run the website locally.
 
 ### Prerequisites
 
-* **Node.js** (version 18 or later recommended): You can download it from [https://nodejs.org/](https://nodejs.org/). Ensure npm (Node Package Manager) is installed with Node.js.
+* **Node.js** (version 18 or later recommended): typically called `nodejs` in popular package managers. Ensure `npm` (Node Package Manager) is installed with Node.js.
 
 ### Installation
 
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
+    git clone git@github.com:dekkerlab/labsite.git
     cd your-repository-name
     ```
 
-    Replace `<repository_url>` with the URL of your Git repository.
+    Replace `git@github.com:dekkerlab/labsite.git` with the URL of your Git repository.
 
 2.  **Install dependencies:**
 
@@ -27,7 +27,7 @@ These instructions will guide you on how to set up and run the website locally.
     npm install
     ```
 
-    This command installs all the necessary packages listed in the `package.json` file, including 11ty and any plugins (like `@11ty/eleventy-plugin-dates` and `js-yaml`).
+    This command installs all the necessary packages listed in the `package.json` file, including 11ty and any plugins (like `@11ty/eleventy-plugin-dates` and `js-yaml`). The fate of the `package.lock.json` is less clear to me (to be figured out)...
 
 ### Rendering and Serving the Website
 

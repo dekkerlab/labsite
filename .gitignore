@@ -10,3 +10,4 @@ _site/
 # more stuff - just in case ...
 .env
 .cache
+.zed/
