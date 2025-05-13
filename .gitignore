@@ -1,0 +1,12 @@
+
+# node and 11ty stuff ...
+node_modules/
+_site/
+
+# macos stuff ...
+**/.DS_Store
+.DS_Store
+
+# more stuff - just in case ...
+.env
+.cache

@@ -1,0 +1,100 @@
+.site-header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-main .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--bg-color); /* Ensure main content respects theme */
+    color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.site-header h1 a {
+    color: var(--header-text);
+}
+
+.site-main {
+    flex-grow: 1; /* Allow the main content to take up remaining vertical space */
+    padding: 40px 0;
+}
+
+.site-header .theme-toggle {
+    margin-left: auto; /* Push the toggle to the right */
+}
+
+.site-nav {
+    background-color: var(--nav-bg); /* Style navigation background if needed */
+}
+
+
+.site-nav a {
+    text-decoration: none;
+    /* color: var(--text-color); */
+    color: var(--nav-text);
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: var(--nav-link-hover);
+    color: var(--link-hover);
+    font-weight: bold;
+}
+
+.site-footer {
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    /* border-top: 1px solid #555; /* Adjust for dark theme if needed */ */
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* ... drop down menu ... */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: inline-block; */
+    display: inline-flex; /*Use flexbox for the main navigation items*/
+}
+
+
+.site-nav .dropdown {
+  position: relative; /* Needed for absolute positioning of the dropdown menu */
+  display: inline-block;
+}
+
+.site-nav .dropdown-menu {
+  display: none; /* Initially hide the dropdown menu */
+  position: absolute;
+  z-index: 10; /* Ensure it's above other elements */
+  min-width: 150px; /* Adjust as needed */
+}
+
+.site-nav .dropdown-menu li {
+  display: block; /* Initially hide the dropdown menu */
+}
+
+.site-nav .dropdown:hover .dropdown-menu {display: block;}

@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+
+<article class="news-post">
+  <h1>{{ title }}</h1>
+  <p class="post-date">Published on: {{ date | formatDate }}</p>
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+</article>
+
+<style>
+  .news-post {
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+
+  .post-date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  .post-content {
+    line-height: 1.7;
+  }
+</style>

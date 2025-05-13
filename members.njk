@@ -1,0 +1,71 @@
+---
+title: Dekker Lab Members
+permalink: /lab-members/
+layout: base.njk
+---
+
+<h1>{{ title }}</h1>
+
+
+<div class="lab-members-grid">
+  {% for member in members | sortByLastName %}
+  <div class="member-card">
+    {% if member.image %}
+    <img src="{{ member.image }}" alt="{{ member.name }}" class="lab-member-image">
+    {% endif %}
+    <h3>{{ member.name }}</h3>
+    <p>{{ member.position }}</p>
+    {% if member.email %}
+      <p>
+        <script type="text/javascript">
+          var user = "{{ member.name }}".split(" ")[1];
+          var domain = "umassmed.edu";
+          document.write('<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>');
+        </script>
+        <noscript>[Enable JavaScript to see email address]</noscript>
+      </p>
+    {% endif %}
+    {% if member.interests %}
+    <p><strong>Interests:</strong>
+      {% for interest in member.interests %}
+      {{ interest }}{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+<style>
+    .lab-member-image {
+    width: 200px; /* Your desired normalized width */
+    height: 200px; /* Your desired normalized height */
+    object-fit: cover; /* Crop to fit the dimensions */
+    clip-path: circle();
+    /* border-radius: 5px; /* Optional: for rounded corners */
+    /* margin-bottom: 10px; /* Optional: spacing below the image */ */ */
+    }
+
+  .lab-members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .member-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  .member-card img {
+    max-width: 100%;
+    /* height: auto; */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+</style>

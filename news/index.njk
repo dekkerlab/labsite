@@ -1,0 +1,18 @@
+---
+title: Dekker Lab News
+permalink: /news/
+layout: base.njk
+---
+
+<h1>Lab News and Announcements</h1>
+
+
+<ul class="news-list">
+  {% for post in collections.news %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <span class="post-date">({{ post.date | formatDate }})</span>
+      <p>{{ post.excerpt | truncate(150) }} <a href="{{ post.url }}">Read more</a></p>
+    </li>
+  {% endfor %}
+</ul>

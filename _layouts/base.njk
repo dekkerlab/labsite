@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Dekker Lab</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">Dekker Lab</a></h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/piprofile/">PI-profile</a></li>
+          <li><a href="/news/">News</a></li>
+          <li class="dropdown">
+            <a href="/lab-members/" {% if page.url == '/lab-members/' or page.url == '/alumni/' %}class="active"{% endif %}>Lab Members</a>
+            <ul class="dropdown-menu">
+              <li><a href="/lab-members/" {% if page.url == '/lab-members/' %}class="active"{% endif %}>Current Members</a></li>
+              <li><a href="/alumni/" {% if page.url == '/alumni/' %}class="active"{% endif %}>Alumni</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+        <p>&copy; {{ site.currentYear }} Dekker Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
