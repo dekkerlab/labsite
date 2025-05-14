@@ -1,0 +1,99 @@
+---
+title: Home
+layout: base.njk
+permalink: /
+---
+
+<div id="greetings">
+    <h1>Welcome to the Dekker Lab !</h1>
+    <h2>3D Genome</h2>
+</div>
+
+<div class="orgs-grid">
+    <div class="logo-div">
+      <img src="/images/logos/dsb-logo-final.png" class="org-logo dsb-clip">
+    </div>
+    <div class="logo-div">
+      <img src="/images/logos/UMassChan_Vertical_2Color.png" class="org-logo">
+    </div>
+    <div class="logo-div">
+      <img src="/images/logos/HHMI-vertical-signature-color.png" class="org-logo hhmi-clip">
+    </div>
+    <div class="logo-div">
+      <img src="/images/logos/4dn-logo.png" class="org-logo fdn-clip">
+    </div>
+    <div class="logo-div">
+      <img src="/images/logos/nih-logo.png" class="org-logo">
+    </div>
+</div>
+
+
+<h2>Contact Us</h2>
+<p>
+    We welcome collaborations and inquiries. Reach out to us to learn more about our work or potential partnerships.
+    [Get in Touch](/contact/)
+</p>
+
+<style>
+
+    #greetings {
+        background-image: url(/images/chrom.jpg);
+        background-color: var(--bg-color);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+        text-align: center;
+        background-blend-mode: multiply;
+    }
+
+
+    #greetings h1, h2 {
+        color: white;
+        font-size: 30px;
+        font-family: Muli,sans-serif;
+        text-rendering: optimizeLegibility;
+    }
+
+    .org-logo {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    /* border-radius: 5px; /* Optional: for rounded corners */
+    /* margin-bottom: 10px; /* Optional: spacing below the image */
+    /* max-width: 100%; */
+    /* height: auto; */
+    /* width: auto; */
+    }
+    .dsb-clip {
+        /* clip-path: inset(top right bottom left); */
+        /* clip-path: inset(0px 250px 0px 0px); */
+        width: 110px;
+        object-fit: cover;
+        object-position: 0 50%;
+    }
+    .hhmi-clip {
+        /* clip-path: inset(10px 0px 10px 0px); */
+        width: 140px;
+        object-fit: cover;
+    }
+    .fdn-clip {
+        width: 150px;
+        /* object-fit: cover; */
+    }
+
+  .orgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .logo-div {
+    /* border: 1px solid #ccc; */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+</style>

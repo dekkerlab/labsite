@@ -1,6 +1,6 @@
 ---
-title: Dekker Lab Members
-permalink: /lab-members/
+title: People
+permalink: /people/
 layout: base.njk
 ---
 
@@ -35,6 +35,21 @@ layout: base.njk
   </div>
   {% endfor %}
 </div>
+
+<h1>Alumni</h1>
+
+<div class="lab-members-grid">
+  {% for alum in alumni %}
+  <div class="member-card">
+    {% if alum.image %}
+    <img src="{{ alum.image }}" alt="{{ alum.name }}" class="lab-member-image">
+    {% endif %}
+    <h3>{{ alum.name }}</h3>
+    <p>Former {{ alum.position }}</p>
+  </div>
+  {% endfor %}
+</div>
+
 
 
 <style>
