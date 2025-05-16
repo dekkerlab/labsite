@@ -1,5 +1,53 @@
-@import "_theme.css";
-@import "_aheader.css";
-@import "_layout-TEST.css";
-@import "_button.css";
-@import "_news.css";
+/* Light Theme (Default) */
+:root {
+    --font-primary: "Arial", sans-serif;
+    --font-secondary: "Georgia", serif;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg: #f0f0f0;
+    --header-text: #333;
+    --nav-bg: #f0f0f0;
+    --nav-text: #333;
+    --nav-link-hover: #007bff;
+    --link-color: #007bff;
+    --link-hover: #0056b3;
+    --footer-bg: #333;
+    --footer-text: #fff;
+    --accent-color: #007bff;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* transition:
+        background-color 0.3s ease,
+        color 0.3s ease; */
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+/* anchors - likely/mostly hypertext references ... */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}

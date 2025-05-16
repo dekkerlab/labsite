@@ -5,8 +5,8 @@ permalink: /
 ---
 
 <div id="greetings">
-    <h1>Welcome to the Dekker Lab !</h1>
-    <h2>3D Genome</h2>
+    <h1><mark>Welcome to the Dekker Lab !</mark></h1>
+    <h2><mark>3D Genome</mark></h2>
 </div>
 
 <div class="orgs-grid">
@@ -54,6 +54,15 @@ permalink: /
         font-family: Muli,sans-serif;
         text-rendering: optimizeLegibility;
     }
+
+    #greetings mark {
+      color: white;
+      display: inline-block;
+      line-height: 0em;
+      padding-bottom: 0.5em;
+      background-color: gray;
+    }
+
 
     .org-logo {
     width: 120px;
