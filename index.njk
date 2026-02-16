@@ -4,105 +4,43 @@ layout: base.njk
 permalink: /
 ---
 
-<div id="greetings">
-    <h1><mark>Welcome to the Dekker Lab !</mark></h1>
-    <h2><mark>3D Genome</mark></h2>
-</div>
-
-<div class="orgs-grid">
-    <div class="logo-div">
-      <img src="/images/logos/dsb-logo-final.png" class="org-logo dsb-clip">
-    </div>
-    <div class="logo-div">
-      <img src="/images/logos/UMassChan_Vertical_2Color.png" class="org-logo">
-    </div>
-    <div class="logo-div">
-      <img src="/images/logos/HHMI-vertical-signature-color.png" class="org-logo hhmi-clip">
-    </div>
-    <div class="logo-div">
-      <img src="/images/logos/4dn-logo.png" class="org-logo fdn-clip">
-    </div>
-    <div class="logo-div">
-      <img src="/images/logos/nih-logo.png" class="org-logo">
+<div class="hero mb-4">
+    <div class="hero-content">
+        <h1>Welcome to the <mark>Dekker Lab !</mark></h1>
+        <h2><mark>3D Genome</mark></h2>
     </div>
 </div>
 
+<div class="container mb-4">
+    <div class="logo-grid">
+        <div class="logo-item theme-switchable">
+            <!-- DSB Logo -->
+            <img src="/images/logos/dsb-logo-final-dark.png" alt="DSB Logo" class="logo-light">
+            <img src="/images/logos/dsb-logo-final.png" alt="DSB Logo" class="logo-dark">
+        </div>
+        <div class="logo-item theme-switchable">
+            <!-- UMass Logo -->
+            <img src="/images/logos/UMassChan_Vertical_2Color.png" alt="UMass Chan Logo" class="logo-light">
+            <img src="/images/logos/UMassChan_Vertical_2Color-white.png" alt="UMass Chan Logo" class="logo-dark">
+        </div>
+        <div class="logo-item theme-switchable">
+            <!-- HHMI Logo -->
+            <img src="/images/logos/HHMI-vertical-signature-color.png" alt="HHMI Logo" class="logo-light">
+            <img src="/images/logos/HHMI-vertical-signature-white.png" alt="HHMI Logo" class="logo-dark">
+        </div>
+        <div class="logo-item theme-switchable">
+            <img src="/images/logos/4dn-logo-dark.png" alt="4DN Logo" class="logo-light">
+            <img src="/images/logos/4dn-logo-light.png" alt="4DN Logo" class="logo-dark">
+        </div>
+        <div class="logo-item">
+            <img src="/images/logos/nih-logo.png" alt="NIH Logo">
+        </div>
+    </div>
+</div>
 
-<h2>Contact Us</h2>
-<p>
-    We welcome collaborations and inquiries. Reach out to us to learn more about our work or potential partnerships.
-    [Get in Touch](/contact/)
+
+<h2 class="text-center">Contact Us</h2>
+<p class="text-center">
+    We welcome collaborations and inquiries. Reach out to us to learn more about our work or potential partnerships.<br>
+    <a href="/contact/" class="button">Get in Touch</a>
 </p>
-
-<style>
-
-    #greetings {
-        background-image: url(/images/chrom.jpg);
-        background-color: var(--bg-color);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 200px;
-        text-align: center;
-        background-blend-mode: multiply;
-    }
-
-
-    #greetings h1, h2 {
-        color: white;
-        font-size: 30px;
-        font-family: Muli,sans-serif;
-        text-rendering: optimizeLegibility;
-    }
-
-    #greetings mark {
-      color: white;
-      display: inline-block;
-      line-height: 0em;
-      padding-bottom: 0.5em;
-      background-color: gray;
-    }
-
-
-    .org-logo {
-    width: 120px;
-    height: 100px;
-    object-fit: contain;
-    /* border-radius: 5px; /* Optional: for rounded corners */
-    /* margin-bottom: 10px; /* Optional: spacing below the image */
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* width: auto; */
-    }
-    .dsb-clip {
-        /* clip-path: inset(top right bottom left); */
-        /* clip-path: inset(0px 250px 0px 0px); */
-        width: 110px;
-        object-fit: cover;
-        object-position: 0 50%;
-    }
-    .hhmi-clip {
-        /* clip-path: inset(10px 0px 10px 0px); */
-        width: 140px;
-        object-fit: cover;
-    }
-    .fdn-clip {
-        width: 150px;
-        /* object-fit: cover; */
-    }
-
-  .orgs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .logo-div {
-    /* border: 1px solid #ccc; */
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-  }
-
-</style>

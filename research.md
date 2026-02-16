@@ -15,4 +15,6 @@ Our research has revealed new insights into the mechanisms of long-range gene re
 Recently, NIH started the [4D Nucleome](https://commonfund.nih.gov/4dnucleome/index) initiative. Our lab heads one of 6 centers in this network. In our center we employ state-of-the-art genomics, imaging, genome engineering, computational modeling and bioinformatic approaches to study the structure and biophysics of the human genome.
 
 [Our recent work](http://science.sciencemag.org/content/early/2018/01/17/science.aao6135.full) reveals, on a minute-time resolution, how cells pack chromosomes into highly condensed structures prior to cell division. You can check out the following video for a summary,
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/YUrTxc2QgwQ?si=gadc_d5JSRGps0ir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/YUrTxc2QgwQ?si=gadc_d5JSRGps0ir" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>

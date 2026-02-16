@@ -1,18 +1,7 @@
 ---
 title: Publications
-layout: base.njk
+layout: publications.njk
 permalink: /publications/
 ---
 
-# Publications
-
-* Project A: [Brief description]
-* Project B: [Brief description]
-* Project A: [Brief description]
-* Project B: [Brief description]
-* Project A: [Brief description]
-* Project B: [Brief description]
-* Project A: [Brief description]
-* Project B: [Brief description]
-* Project A: [Brief description]
-* Project B: [Brief description]
+Visit [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/?term=job+dekker) for details.

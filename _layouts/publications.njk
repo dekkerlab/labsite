@@ -1,0 +1,86 @@
+---
+layout: base.njk
+---
+
+<div class="publications">
+  <h1>{{ title }}</h1>
+
+  {{ content | safe }}
+
+  {% set currentYear = "" %}
+  {% set publist = publications %}
+  
+  {% for pub in publist %}
+    {% if pub.year != currentYear %}
+      {% set currentYear = pub.year %}
+      <h2>{{ currentYear }}</h2>
+    {% endif %}
+
+    <div class="publication-item">
+      <div class="pub-title">
+        <strong>{{ pub.TI }}</strong>
+      </div>
+      <div class="pub-authors">
+        {% set authors = pub.FAU if pub.FAU else pub.AU %}
+        {% if authors %}
+             {% if authors.length > 10 %}
+                {{ authors.slice(0, 10) | join(", ") }}<span id="dots-{{ loop.index }}">... </span><span id="more-authors-{{ loop.index }}" style="display: none;">, {{ authors.slice(10) | join(", ") }}</span> <a href="javascript:void(0)" onclick="toggleAuthors({{ loop.index }})" id="toggle-{{ loop.index }}">Show all</a>
+             {% else %}
+                 {% if authors.join %}
+                    {{ authors | join(", ") }}
+                 {% else %}
+                    {{ authors }}
+                 {% endif %}
+             {% endif %}
+        {% endif %}
+      </div>
+      <div class="pub-source">
+        {% if pub.TA %}{{ pub.TA }}.{% endif %}
+        {% if pub.DP %}{{ pub.DP }};{% endif %}
+        {% if pub.VI %}{{ pub.VI }}{% if pub.IP %}({{ pub.IP }}){% endif %}:{% endif %}
+        {% if pub.PG %}{{ pub.PG }}.{% endif %}
+      </div>
+      <div class="pub-links">
+        {% if pub.PMID %}PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pub.PMID }}" target="_blank">{{ pub.PMID }}</a>{% endif %}
+        {% if pub.AID %}
+          {% set doi = "" %}
+          {% if pub.AID.length %}
+             {% for id in pub.AID %}
+                {% if id.includes("[doi]") %}
+                    {% set doi = id | replace(" [doi]", "") %}
+                {% endif %}
+             {% endfor %}
+          {% else %}
+             {% if pub.AID.includes("[doi]") %}
+                {% set doi = pub.AID | replace(" [doi]", "") %}
+             {% endif %}
+          {% endif %}
+          
+          {% if doi %}
+             | DOI: <a href="https://doi.org/{{ doi }}" target="_blank">{{ doi }}</a>
+          {% endif %}
+        {% endif %}
+        {% if pub.PMC %} | <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.PMC }}" target="_blank">{{ pub.PMC }}</a>{% endif %}
+      </div>
+    </div>
+    <hr>
+  {% endfor %}
+</div>
+
+<script>
+function toggleAuthors(id) {
+  var moreText = document.getElementById("more-authors-" + id);
+  var dots = document.getElementById("dots-" + id);
+  var btnText = document.getElementById("toggle-" + id);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show all";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less";
+    moreText.style.display = "inline";
+  }
+}
+</script>

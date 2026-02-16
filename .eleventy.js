@@ -8,6 +8,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
+  // Server Options (Eleventy v3)
+  eleventyConfig.setServerOptions({
+    showAllHosts: true, // Show local network IP in terminal
+    domDiff: false // Disable dom diffing if it causes issues, optional
+  });
+
   // Use the imported function for global data
   eleventyConfig.addGlobalData("site", {
     currentYear: utils.currentYear(),
