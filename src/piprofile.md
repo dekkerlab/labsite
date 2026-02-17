@@ -18,7 +18,7 @@ permalink: /piprofile/
         <p><strong>e-mail:</strong> <a href="mailto:job.dekker@umassmed.edu">✉️</a></p>
         <p><strong>address:</strong><br>
         University of Massachusetts Chan Medical School<br>
-        368 Plantation Street, AS5-1049<br>
+        368 Plantation Street, AS6-1049<br>
         Worcester MA 01605</p>
         <p><strong>External Profiles:</strong> <a href="https://profiles.umassmed.edu/display/133343">UMass RNS</a>, <a href="http://www.hhmi.org/scientists/job-dekker">HHMI Profile</a></p>
     </div>

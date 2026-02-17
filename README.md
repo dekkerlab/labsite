@@ -2,6 +2,13 @@
 
 This repository contains the source code for the Dekker Lab website.
 
+## Project Structure
+
+- `src/`: Contains all source files (content, templates, styles).
+- `src/_data/`: **Global Data**. Files here (JSON, YAML, JS) are automatically loaded by 11ty and available as global variables.
+- `src/utils/`: **Utility Scripts**. Helper functions and build scripts (e.g., `generate-publications.js`, `site.js`) that are *manually* required or executed. They are NOT automatically loaded as data.
+- `.eleventy.js`: Main configuration file.
+
 ## Getting Started
 
 These instructions will guide you on how to set up and run the website locally.

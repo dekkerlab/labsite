@@ -1,10 +1,10 @@
 const yaml = require("js-yaml");
 // const { myFunction } = require("./my-functions.js");
-const utils = require("./_data/site.js");
+const utils = require("./src/utils/site.js");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("static");
-  eleventyConfig.addPassthroughCopy("images"); // Keep your original images
+  eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy("src/images"); // Keep your original images
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
@@ -38,7 +38,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("news", (collectionApi) => {
-    const newsPosts = collectionApi.getFilteredByGlob("./news/*.md");
+    const newsPosts = collectionApi.getFilteredByGlob("./src/news/*.md");
     return newsPosts.sort(
       (a, b) => new Date(b.data.date) - new Date(a.data.date),
     );
@@ -46,10 +46,10 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: ".",
+      input: "src",
       output: "_site",
       data: "_data",
-      layouts: "_layouts", // Try explicitly setting the layouts directory
+      layouts: "_layouts", // Relative to input directory
     },
   };
 };
