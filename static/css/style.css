@@ -65,6 +65,11 @@ select {
     }
 }
 
+/* Prevent transitions on load */
+.preload * {
+    transition: none !important;
+}
+
 /* Variables */
 :root {
     /* Colors */
