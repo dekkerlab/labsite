@@ -6,49 +6,80 @@ layout: base.njk
 
 <h1>{{ title }}</h1>
 
-<div class="grid grid-cols-3 mb-4">
+<div class="grid grid-cols-2 mb-4">
   {% for member in members | sortByLastName %}
   <div class="card member-card">
-    {% if member.image %}
-    <img src="{{ member.image }}" alt="{{ member.name }}" class="member-image">
-    {% else %}
-    <div class="member-image" style="background-color: var(--color-border);"></div>
-    {% endif %}
-    <h3>{{ member.name }}</h3>
-    <p>{{ member.position }}</p>
-    {% if member.email %}
-      <p>
-        <script type="text/javascript">
-          var user = "{{ member.name }}".split(" ")[1];
-          var domain = "umassmed.edu";
-          document.write('<a href="mailto:' + user + '@' + domain + '">Email</a>');
-        </script>
-        <noscript>Email hidden</noscript>
-      </p>
-    {% endif %}
-    {% if member.interests %}
-    <p><strong>Interests:</strong><br>
-      {% for interest in member.interests %}
-      {{ interest }}{% if not loop.last %}, {% endif %}
-      {% endfor %}
-    </p>
-    {% endif %}
+    <div class="member-header">
+      {% if member.image %}
+      <img src="{{ member.image }}" alt="{{ member.name }}" class="member-image">
+      {% else %}
+      <div class="member-image" style="background-color: var(--color-border);"></div>
+      {% endif %}
+      
+      <div class="member-intro">
+        <h3>{{ member.name }}
+          {% if member.email %}
+            <script type="text/javascript">
+              document.write('<a href="mailto:' + "{{member.email}}" + '">✉️</a>');
+            </script>
+            <noscript>Email hidden</noscript>
+          {% else %}
+            <script type="text/javascript">
+              var user = "{{ member.name }}".split(" ")[1];
+              var domain = "umassmed.edu";
+              document.write('<a href="mailto:' + user + '@' + domain + '">✉️</a>');
+            </script>
+            <noscript>Email hidden</noscript>
+          {% endif %}
+        </h3>
+        <p class="member-position">{{ member.position }}</p>
+      </div>
+    </div>
+
+    <div class="member-details">
+
+      {% if member.education %}
+      <ul class="member-education">
+        {% for edu in member.education %}
+        <li> - {{ edu }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if member.focus %}
+      <span class="member-focus"> <strong>Research Focus:</strong> {{ member.focus }}</span>
+      {% endif %}
+
+    </div>
+
   </div>
   {% endfor %}
 </div>
 
 <h2>Alumni</h2>
 
-<div class="grid grid-cols-4">
+<div class="grid grid-cols-3">
   {% for alum in alumni %}
   <div class="card member-card">
-    {% if alum.image %}
-    <img src="{{ alum.image }}" alt="{{ alum.name }}" class="member-image">
-    {% else %}
-    <div class="member-image" style="background-color: var(--color-border);"></div>
-    {% endif %}
-    <h3>{{ alum.name }}</h3>
-    <p>Former {{ alum.position }}</p>
+
+    <div class="member-header">
+      {% if alum.image %}
+      <img src="{{ alum.image }}" alt="{{ alum.name }}" class="member-image">
+      {% else %}
+      <div class="member-image" style="background-color: var(--color-border);"></div>
+      {% endif %}
+      <h3>{{ alum.name }}</h3>
+    </div>
+
+    <div class="member-intro">
+      {% if alum.former_position %}
+      <p><strong>Former:</strong> {{ alum.former_position }}</p>
+      {% endif %}
+      {% if alum.current_position %}
+      <p><strong>Currently:</strong> {{ alum.current_position }}</p>
+      {% endif %}
+    </div>
+
   </div>
   {% endfor %}
 </div>

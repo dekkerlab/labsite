@@ -4,13 +4,19 @@ layout: base.njk
 permalink: /piprofile/
 ---
 
-<h1>Job Dekker</h1>
+<h1>Job Dekker, PhD</h1>
 
 <div class="grid grid-cols-2 mb-4">
     <div>
-        <p><strong>Phone:</strong> 508-856-4371</p>
-        <p><strong>Email:</strong> <a href="mailto:job.dekker@umassmed.edu">job.dekker@umassmed.edu</a></p>
-        <p><strong>Address:</strong><br>
+        <p>Investigator, Howard Hughes Medical Institute</p>
+        <p>Joseph J. Byrne Chair in Biomedical Research</p>
+        <p>Professor, Department of Systems Biology</p>
+        <p>University of Massachusetts Chan Medical School</p>
+    </div>
+    <div>
+        <p><strong>phone:</strong> 508-856-4371</p>
+        <p><strong>e-mail:</strong> <a href="mailto:job.dekker@umassmed.edu">✉️</a></p>
+        <p><strong>address:</strong><br>
         University of Massachusetts Chan Medical School<br>
         368 Plantation Street, AS5-1049<br>
         Worcester MA 01605</p>
@@ -61,3 +67,12 @@ permalink: /piprofile/
 
 <h2>Job Dekker: Hitting the scientific hi-Cs</h2>
 <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119947/" target="_blank" rel="noopener">Read Article</a></p>
+
+<h2>Building the compartmentalized interphase nucleus</h2>
+<div class="video-container">
+    <video width="100%" height="auto" controls preload="metadata">
+        <source src="https://kitpcloud.s3-us-west-2.amazonaws.com/chromosomes20/Jdekker_Chromosomes20_KITP.mp4?_=1" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://kitpcloud.s3-us-west-2.amazonaws.com/chromosomes20/Jdekker_Chromosomes20_KITP.mp4">Download Video</a>
+    </video>
+</div>

@@ -1,108 +1,145 @@
+- name: Johan Gibcus
+  image: /images/members/johan.png
+  former_position: Assistant Professor
+  current_position: Sequencing Core Director at MIT
+
 - name: Yu Liu
   nickname: Sunny
   image: /images/alumni/sunny.png
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Assistant Professor at Fox Chase Cancer Center
 
 - name: Snehal Sambare
   image: /images/alumni/snehal.jpg
-  position: Bioinformatician II
+  former_position: Bioinformatician II
+  current_position: PhD student at Umass Chan Medical School
 
 - name: Anne-Laure Valton
   image: /images/alumni/annelaure.jpg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Researcher at University of Toulouse, France
 
 - name: George Spracklin
   image: /images/alumni/george.jpg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Researcher at Moderna Therapeutics
 
 - name: Erica Hildebrand
   image: /images/alumni/erica.jpg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Researcher at nChroma Bio
 
 - name: Davood Norouzi
   image: /images/alumni/davood.jpg
-  position: Staff Scientist
+  former_position: Staff Scientist
+  current_position: Researcher at Takeda Pharmaceuticals
 
 - name: Betul Akgol Oksuz
   image: /images/alumni/betul.jpg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Researcher
 
 - name: Marlies Oomen
   image: /images/alumni/marlies.jpg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Postdoctoral Fellow at University of Munchen
 
 - name: Kristin Abramo
   image: /images/alumni/kristin.jpg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: PhD Student
+
+- name: Houda Belaghzal
+  image: /images/alumni/houda.jpg
+  former_position: PhD Student
+  current_position: Researcher at Omega Therapeutics
 
 - name: Ankita Nand
   image: /images/alumni/ankita.jpg
-  position: Bioinformatician II
+  former_position: Bioinformatician II
+  current_position: Bioinformatician at University of Toronto
 
 - name: Hakan Ozadam
   image: /images/alumni/hakan.jpg
-  position: Bioinformatician III
+  former_position: Bioinformatician III
+  current_position: Research Scientist at the University of Texas, Austin
 
 - name: Filipe Tavares-Cadete
   image: /images/alumni/filipe.png
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Postdoctoral Fellow, Instituto de Medicina Molecular João Lobo Antunes, Lisbon, Portugal
 
 - name: Noam Kaplan
   image: /images/alumni/noam.png
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Principal Investigator, Technion Israel Institute of Technology, Haifa, Israel
 
 - name: Bryan R. Lajoie
   image: /images/alumni/bryan.jpeg
-  position: Bioinformatician II
+  former_position: Bioinformatician II
+  current_position: Bioinformatics Scientist II, Illumina, San Diego, California
 
 - name: Gaurav Jain
   image: /images/alumni/gaurav.jpeg
-  position: Bioinformatician
+  former_position: Bioinformatician
+  current_position: Bioinformatics Research Scientist at DZNE, Göttingen, Lower Saxony, Germany
 
 - name: Jon-Matthew Belton
   image: /images/alumni/jon.jpeg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Researcher at Arrima Genomics
 
 - name: Rachel Patton McCord
   image: /images/alumni/rachel.jpg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Assistant Professor at The University of Tennessee, Knoxville, Tennessee
 
 - name: Natalia Naumova
   image: /images/alumni/natasha.jpeg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Scientist at Epinomics, San Francisco Bay Area
 
 - name: Jennifer E. Phillips-Cremins
   image: /images/alumni/jennifer.jpeg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Principal Investigator, University of Pennsylvania, Philadelphia
 
 - name: Amartya Sanyal
   image: /images/alumni/amartya.jpg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Principal Investigator, Nanyang Technological University, Singapore
 
 - name: Emily Smith
   image: /images/alumni/emily-smith.jpeg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Assistant Professor at Earlham College, Richmond, Indiana
 
 - name: Rasim Barutcu
   image: /images/alumni/rasim-barutcu.jpg
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Postdoctoral Fellow, University of Toronto, Toronto, Canada
 
 - name: Josee Dostie
   image: /images/alumni/josee-dostie.jpeg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Associate Professor, Department of Biochemistry, McGill University, Montreal, Canada
 
 - name: Nele Gheldof
   image: /images/alumni/nele-gheldof.jpeg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Human Genetics Specialist at Nestlé Institute of Health Sciences, Lausanne Area, Switzerland
 
 - name: Adriana Geldart
   image: /images/alumni/adriana.png
-  position: PhD Student
+  former_position: PhD Student
+  current_position: Sample Prep Support Manager, Roche, Greater Boston Area
 
 - name: Tomoko Tabuchi Morin
   image: /images/alumni/tomoko.jpeg
-  position: Research Associate
+  former_position: Research Associate
+  current_position: Assistant Project Scientist at UC Santa Cruz, Santa Cruz, California
 
 - name: Nynke van Berkum
   image: /images/alumni/nynke.jpeg
-  position: Postdoctoral Fellow
+  former_position: Postdoctoral Fellow
+  current_position: Projectmanager Microbiology and Systems Biology, TNO, Utrecht Area, The Netherlands

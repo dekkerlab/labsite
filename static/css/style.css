@@ -73,14 +73,18 @@ select {
     --color-secondary: #6c757d;
     --color-accent: #ffc107;
     --color-text: #333;
-    --color-bg: #fdfdfd;
-    --color-bg-alt: #f8f9fa;
+    --color-bg: #f1f0f3;
+    /* Dimmer light mode background */
+    --color-header-bg: #ffffff;
+    /* White header for separation */
+    --color-bg-alt: #ffffff;
+    /* Keeping cards white or alt bg */
     --color-border: #dee2e6;
     --color-white: #ffffff;
 
     /* Typography */
     --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-heading: 'Merriweather', serif;
+    --font-heading: 'Outfit', sans-serif;
 
     /* Spacing */
     --spacing-sm: 0.5rem;
@@ -96,10 +100,14 @@ select {
 [data-theme="dark"] {
     --color-primary: #4dabf7;
     --color-secondary: #adb5bd;
-    --color-accent: #ffd43b;
+    --color-accent: #e6bc23;
     --color-text: #e9ecef;
-    --color-bg: #212529;
-    --color-bg-alt: #343a40;
+    --color-bg: #211f1f;
+    /* Deep dark background */
+    --color-header-bg: #272626;
+    /* Distinct header background */
+    --color-bg-alt: #2c3035;
+    /* Alt background */
     --color-border: #495057;
     --color-white: #212529;
     /* In dark mode, cards are dark */
@@ -163,11 +171,19 @@ a:hover {
 }
 
 .site-header {
-    background-color: var(--color-white);
+    background-color: var(--color-header-bg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="dark"] .site-header {
+    box-shadow: none;
+    /* Hide shadow in dark mode if it's not visible */
+    border-bottom: 1px solid var(--color-border);
+    /* Add distinct border */
 }
 
 .site-header .container {
@@ -191,6 +207,8 @@ a:hover {
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
+    /* Vertically align text and icons */
 }
 
 .site-nav a {
@@ -210,7 +228,7 @@ a:hover {
 }
 
 .site-footer {
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-header-bg);
     padding: var(--spacing-lg) 0;
     text-align: center;
     font-size: 0.9rem;
@@ -226,11 +244,11 @@ a:hover {
 }
 
 .grid-cols-2 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .grid-cols-3 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-cols-4 {
@@ -255,7 +273,16 @@ a:hover {
 }
 
 .member-card {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.member-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-md);
 }
 
 .member-image {
@@ -263,18 +290,59 @@ a:hover {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto var(--spacing-md);
+    flex-shrink: 0;
     border: 3px solid var(--color-bg-alt);
+}
+
+.member-intro {
+    flex: 1;
+}
+
+.member-details {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-bg-alt);
+}
+
+.member-position {
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.member-focus {
+    font-size: 0.9rem;
+    /* font-style: italic; */
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.member-education {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+}
+
+.member-education li {
+    margin-bottom: 0.2rem;
 }
 
 .hero {
     background-color: var(--color-primary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/anton_crop.webp');
+    background-size: cover;
+    background-position: center;
     color: var(--color-white);
     padding: var(--spacing-xl) 0;
+    min-height: 400px;
+    /* Ensure enough height to see the image */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .hero-content {
@@ -398,8 +466,8 @@ html[data-theme="dark"] .logo-dark {
 
 .map-container {
     position: relative;
-    padding-bottom: 75%;
-    /* 4:3 */
+    padding-bottom: 50%;
+    /* Smaller aspect ratio (was 75%) */
     height: 0;
     overflow: hidden;
     margin-bottom: var(--spacing-md);
@@ -414,6 +482,11 @@ html[data-theme="dark"] .logo-dark {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Ensure nav items are vertically centered */
+.site-nav ul {
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -437,4 +510,40 @@ html[data-theme="dark"] .logo-dark {
     .hero h1 {
         font-size: 2rem;
     }
+
+    .member-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .member-image {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* Publications List specific overrides */
+.publication-item .pub-title strong {
+    font-weight: normal;
+    /* Make title normal weight as requested */
+    color: var(--color-text);
+}
+
+.publication-item .pub-authors {
+    font-size: 0.85rem;
+    /* Match member education size */
+    color: var(--color-secondary);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.publication-item .pub-meta {
+    font-size: 0.9rem;
+    /* Slightly larger than authors, smaller than body */
+    color: var(--color-text);
+}
+
+.pub-separator {
+    color: var(--color-border);
+    margin: 0 0.3rem;
 }

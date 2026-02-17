@@ -34,14 +34,13 @@ layout: base.njk
              {% endif %}
         {% endif %}
       </div>
-      <div class="pub-source">
+      <div class="pub-meta">
         {% if pub.TA %}{{ pub.TA }}.{% endif %}
         {% if pub.DP %}{{ pub.DP }};{% endif %}
         {% if pub.VI %}{{ pub.VI }}{% if pub.IP %}({{ pub.IP }}){% endif %}:{% endif %}
         {% if pub.PG %}{{ pub.PG }}.{% endif %}
-      </div>
-      <div class="pub-links">
-        {% if pub.PMID %}PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pub.PMID }}" target="_blank">{{ pub.PMID }}</a>{% endif %}
+        
+        {% if pub.PMID %} <span class="pub-separator">|</span> PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pub.PMID }}" target="_blank">{{ pub.PMID }}</a>{% endif %}
         {% if pub.AID %}
           {% set doi = "" %}
           {% if pub.AID.length %}
@@ -57,10 +56,10 @@ layout: base.njk
           {% endif %}
           
           {% if doi %}
-             | DOI: <a href="https://doi.org/{{ doi }}" target="_blank">{{ doi }}</a>
+             <span class="pub-separator">|</span> DOI: <a href="https://doi.org/{{ doi }}" target="_blank">{{ doi }}</a>
           {% endif %}
         {% endif %}
-        {% if pub.PMC %} | <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.PMC }}" target="_blank">{{ pub.PMC }}</a>{% endif %}
+        {% if pub.PMC %} <span class="pub-separator">|</span> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.PMC }}" target="_blank">{{ pub.PMC }}</a>{% endif %}
       </div>
     </div>
     <hr>

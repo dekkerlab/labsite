@@ -1,14 +1,18 @@
 - name: Job Dekker
   image: /images/members/job.jpg
   position: Principal Investigator
+  education: 
+    - Postdoctoral Fellow, Harvard University, USA
+    - PhD Utrecht University, The Netherlands
+    - M.Sc Biology, Utrecht University, The Netherlands
 
 - name: Nicki Fox
   image: /images/members/nicki.jpg
   position: Senior Scientist
-
-- name: Johan Gibcus
-  image: /images/members/johan.png
-  position: Assistant Professor
+  focus: Molecular mechanisms of interphase-to-mitotic transition
+  education: 
+    - PhD in Molecular Biology, Vanderbilt University, Nashville, TN, USA
+    - BSc in Biochemistry, Southern Methodist University, Dallas, TX, USA
 
 - name: Liyan Yang
   image: /images/members/liyan.jpg
@@ -17,39 +21,83 @@
 - name: Sergey Venev
   image: /images/members/sergey.jpg
   position: Bioinformatics Specialist III
+  focus: Development and maintenance of sequencing data processing pipelines for chromosome capture based methods.
+  education:
+    - PhD in Physics, Lomonosov Moscow State University, Russia
+    - MS in Physics of Condensed Matter, Lomonosov Moscow State University, Russia
 
 - name: Ye Zhan
   image: /images/members/ye.png
   position: Senior Research Scientist
+  focus: Exploring the mechanisms of folding of the peculiar dinoflagellate chromosomes using genomic and imaging approaches
+  education:
+    - MS in Biochemistry at Worcester Polytechnic Institute (WPI), Worcester, MA USA
 
 - name: Allana Schooley
   image: /images/members/allana.jpg
   position: Postdoctoral Fellow
+  focus: Nuclear positioning and chromosome conformation in dividing cells
+  education:
+    - PhD in Biochemistry, University of Tübingen,Tübingen Germany
+    - MS in Biochemistry, University of Ottawa, Ottawa Canada
+    - BSc in Biochemistry, University of Western Ontario, London Canada    
 
 - name: Bastiaan Dekker
   image: /images/members/bastiaan.jpg
   position: PhD Student
+  focus: Understanding the spatial genome structure using chromosome conformation capture techniques
+  education:
+    - MS in Biomedical Science, University of Groningen, The Netherlands
 
 - name: Denis Lafontaine
   image: /images/members/denis.jpg
   position: PhD Student
+  focus: Biophysical and dynamic properties of genome structure
+  education:
+    - MS in Biology, Carleton University, Ottawa, Canada
+    - BS in Biology, Carleton University, Ottawa, Canada
 
 - name: Xiangru Huo
   image: /images/members/xiangru.jpg
   position: Postdoctoral Fellow
+  focus: Inheritance and heterogeneity of genome folding
+  education:
+    - PhD in Biochemistry and molecular biology, Fudan University, China.
 
 - name: Jiangyuan Liu
   image: /images/members/jiangyuan.jpg
   position: PhD Student
+  focus: Data analysis of dynamic changes in 3D genome organization during development
+  education:
+    - MSc in Bioinformatics, Northeastern University, USA
+    - BSc in Biological Sciences, University of Liverpool, UK
+    - BSc in Biological Sciences, Xi’an Jiaotong-Liverpool University, China
 
 - name: Nicola Minchell
   image: /images/members/nicola.jpg
   position: Postdoctoral Fellow
+  focus: Sister chromatid conformation during S-phase
+  education:
+    - PhD in Genome Stability, University of Sussex, Brighton, UK
 
 - name: Emily Navarrete
   image: /images/members/emily.jpg
-  position: PhD Student
+  position: PhD Student, MIT Biology
+  focus: Dynamics of euchromatin and heterochromatin organization during development. Co-advised by Leonid Mirny, MIT.
+  education:
+    - BS in Biology, Northeastern University, Boston
 
 - name: Yu Fu
   image: /images/members/yu.jpg
   position: PhD Student
+  focus: Role of cohesin in chromosome folding and gene regulation
+  education:
+    - BS in Biochemistry, UMass Amherst
+    - BS in Computer Science, UMass Amherst
+
+- name: Ulfat Syed Mir
+  image: /images/members/ulfat.jpg
+  position: Postdoctoral Fellow
+  focus: Understanding the molecular mechanisms behind mitotic chromosome assembly
+  education:
+    - PhD in Biochemistry, University of Kashmir, India
