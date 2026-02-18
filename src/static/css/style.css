@@ -446,6 +446,14 @@ html[data-theme="dark"] .logo-dark {
     margin-bottom: var(--spacing-xl);
 }
 
+.items-center {
+    align-items: center;
+}
+
+.self-center {
+    align-self: center;
+}
+
 /* Responsive Video & Map */
 .video-container {
     position: relative;

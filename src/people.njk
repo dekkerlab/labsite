@@ -7,7 +7,7 @@ layout: base.njk
 <h1>{{ title }}</h1>
 
 <div class="grid grid-cols-2 mb-4">
-  {% for member in members | sortByLastName %}
+  {% for member in members %}
   <div class="card member-card">
     <div class="member-header">
       {% if member.image %}
@@ -25,9 +25,9 @@ layout: base.njk
             <noscript>Email hidden</noscript>
           {% else %}
             <script type="text/javascript">
-              var user = "{{ member.name }}".split(" ")[1];
+              var user_arr = "{{ member.name }}".split(" ");
               var domain = "umassmed.edu";
-              document.write('<a href="mailto:' + user + '@' + domain + '">✉️</a>');
+              document.write('<a href="mailto:' + user_arr.join(".") + '@' + domain + '">✉️</a>');
             </script>
             <noscript>Email hidden</noscript>
           {% endif %}

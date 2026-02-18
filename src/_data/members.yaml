@@ -6,6 +6,10 @@
     - PhD Utrecht University, The Netherlands
     - M.Sc Biology, Utrecht University, The Netherlands
 
+- name: Lynn NeJaime
+  image: /images/members/lynn.jpg
+  position: Executive Assistant to Dr. Dekker
+
 - name: Nicki Fox
   image: /images/members/nicki.jpg
   position: Senior Scientist
@@ -13,25 +17,6 @@
   education: 
     - PhD in Molecular Biology, Vanderbilt University, Nashville, TN, USA
     - BSc in Biochemistry, Southern Methodist University, Dallas, TX, USA
-
-- name: Liyan Yang
-  image: /images/members/liyan.jpg
-  position: Research Associate II
-
-- name: Sergey Venev
-  image: /images/members/sergey.jpg
-  position: Bioinformatics Specialist III
-  focus: Development and maintenance of sequencing data processing pipelines for chromosome capture based methods.
-  education:
-    - PhD in Physics, Lomonosov Moscow State University, Russia
-    - MS in Physics of Condensed Matter, Lomonosov Moscow State University, Russia
-
-- name: Ye Zhan
-  image: /images/members/ye.png
-  position: Senior Research Scientist
-  focus: Exploring the mechanisms of folding of the peculiar dinoflagellate chromosomes using genomic and imaging approaches
-  education:
-    - MS in Biochemistry at Worcester Polytechnic Institute (WPI), Worcester, MA USA
 
 - name: Allana Schooley
   image: /images/members/allana.jpg
@@ -41,6 +26,18 @@
     - PhD in Biochemistry, University of Tübingen,Tübingen Germany
     - MS in Biochemistry, University of Ottawa, Ottawa Canada
     - BSc in Biochemistry, University of Western Ontario, London Canada    
+
+- name: Liyan Yang
+  image: /images/members/liyan.jpg
+  position: Research Associate II
+  focus: Development and refinement of advanced genomic methodologies
+
+- name: Ye Zhan
+  image: /images/members/ye.png
+  position: Senior Research Scientist
+  focus: Exploring the mechanisms of folding of the peculiar dinoflagellate chromosomes using genomic and imaging approaches
+  education:
+    - MS in Biochemistry at Worcester Polytechnic Institute (WPI), Worcester, MA USA
 
 - name: Bastiaan Dekker
   image: /images/members/bastiaan.jpg
@@ -69,9 +66,9 @@
   position: PhD Student
   focus: Data analysis of dynamic changes in 3D genome organization during development
   education:
-    - MSc in Bioinformatics, Northeastern University, USA
-    - BSc in Biological Sciences, University of Liverpool, UK
-    - BSc in Biological Sciences, Xi’an Jiaotong-Liverpool University, China
+    - MS in Bioinformatics, Northeastern University, USA
+    - BS in Biological Sciences, University of Liverpool, UK
+    - BS in Biological Sciences, Xi’an Jiaotong-Liverpool University, China
 
 - name: Nicola Minchell
   image: /images/members/nicola.jpg
@@ -101,3 +98,11 @@
   focus: Understanding the molecular mechanisms behind mitotic chromosome assembly
   education:
     - PhD in Biochemistry, University of Kashmir, India
+
+- name: Sergey Venev
+  image: /images/members/sergey.jpg
+  position: Bioinformatics Specialist III
+  focus: Development and maintenance of sequencing data processing pipelines for chromosome capture based methods.
+  education:
+    - PhD in Condensed Matter Physics, Lomonosov Moscow State University, Russia
+    - MS in Physics, Lomonosov Moscow State University, Russia

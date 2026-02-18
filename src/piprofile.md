@@ -14,13 +14,18 @@ permalink: /piprofile/
         <p>University of Massachusetts Chan Medical School</p>
     </div>
     <div>
-        <p><strong>phone:</strong> 508-856-4371</p>
-        <p><strong>e-mail:</strong> <a href="mailto:job.dekker@umassmed.edu">✉️</a></p>
-        <p><strong>address:</strong><br>
-        University of Massachusetts Chan Medical School<br>
+        <strong>Email/Phone:</strong>
+        <script type="text/javascript">
+              var user_arr = "Job Dekker".split(" ");
+              document.write('<a href="mailto:' + user_arr.join(".") + '@' + "umassmed.edu" + '">✉️</a>');
+        </script>
+        <noscript>Email hidden</noscript>
+        , 508-856-4371 <br>
+        <strong>Address:</strong>
+        University of Massachusetts Chan Medical School,<br>
         368 Plantation Street, AS6-1049<br>
-        Worcester MA 01605</p>
-        <p><strong>External Profiles:</strong> <a href="https://profiles.umassmed.edu/display/133343">UMass RNS</a>, <a href="http://www.hhmi.org/scientists/job-dekker">HHMI Profile</a></p>
+        Worcester, MA, 01605<br>
+        <strong>External Profiles:</strong> <a href="https://profiles.umassmed.edu/display/133343">UMass RNS</a>, <a href="http://www.hhmi.org/scientists/job-dekker">HHMI Profile</a>
     </div>
     <div>
         <img src="/images/members/job.jpg" alt="Job Dekker" style="max-width: 300px; border-radius: 8px;">
