@@ -5,6 +5,7 @@ const utils = require("./src/utils/site.js");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPassthroughCopy("src/images"); // Keep your original images
+  eleventyConfig.addPassthroughCopy("src/customHttp.yml");
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 

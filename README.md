@@ -7,6 +7,7 @@ This repository contains the source code for the Dekker Lab website.
 - `src/`: Contains all source files (content, templates, styles).
 - `src/_data/`: **Global Data**. Files here (JSON, YAML, JS) are automatically loaded by 11ty and available as global variables.
 - `src/utils/`: **Utility Scripts**. Helper functions and build scripts (e.g., `generate-publications.js`, `site.js`) that are *manually* required or executed. They are NOT automatically loaded as data.
+- `src/customHttp.yml`: **Security Headers**. Configuration file for AWS Amplify to apply security headers (HSTS, key headers) to the deployed site.
 - `.eleventy.js`: Main configuration file.
 
 ## Getting Started
