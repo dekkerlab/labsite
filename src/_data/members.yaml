@@ -18,6 +18,14 @@
     - PhD in Molecular Biology, Vanderbilt University, Nashville, TN, USA
     - BSc in Biochemistry, Southern Methodist University, Dallas, TX, USA
 
+- name: Guoyun Chen
+  image: /images/members/guoyun.jpg
+  position: PhD Student
+  focus: Regulation of DNA loop extruding motors
+  education:
+    - MSc in Chemistry, Weizmann Institute of Science, Israel
+    - BSc in Chemical Engineering, Technion Israel Institute of Technology, Israel
+
 - name: Allana Schooley
   image: /images/members/allana.jpg
   position: Postdoctoral Fellow
